@@ -55,6 +55,11 @@ cat >"$BUILD_DIR/$MAGICK_DIR/policy.xml" <<EOF
   <policy domain="delegate" rights="read | write" pattern="HTTPS" />
   <policy domain="delegate" rights="read | write" pattern="HTTP" />
   <policy domain="coder" rights="read | write" pattern="PDF" />
+  <policy domain="module" rights="read | write" pattern="{EPS,PS2,PS3,PS,PDF,XPS}" />
+  <policy domain="coder" rights="read | write" pattern="PDF" />
+  <policy domain="path" rights="read | write" pattern="PDF" />
+  <policy domain="coder" rights="read | write" pattern="HTTPS" />
+  <policy domain="delegate" rights="read | write" pattern="HTTPS" />
   <policy domain="path" rights="none" pattern="@*"/>
 </policymap>
 EOF
