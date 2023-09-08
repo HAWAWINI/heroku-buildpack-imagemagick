@@ -24,8 +24,8 @@ if [[ ! -e /usr/bin/convert ]]; then
     exit 1
 fi
 
-MAGICK_BASE_DIR="/ImageMagick-6"
-MAGICK_DIR="$MAGICK_BASE_DIR/etc"
+MAGICK_BASE_DIR="ImageMagick-6/"
+MAGICK_DIR="/etc/$MAGICK_BASE_DIR"
 
 if [[ -e "$BUILD_DIR/$MAGICK_DIR" ]]; then
     echo "-----> Not writing out policy.xml, since \$MAGICK_DIR already exists";
