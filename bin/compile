@@ -33,8 +33,8 @@ if [[ -e "$BUILD_DIR/$MAGICK_DIR" ]]; then
 fi
 
 mkdir -p "$BUILD_DIR/$MAGICK_DIR"
-echo "-----> Writing policy.xml to $MAGICK_DIR/policy.xml"
-cat >"$BUILD_DIR/$MAGICK_DIR/policy.xml" <<EOF
+echo "-----> Writing policy.xml to $MAGICK_DIRpolicy.xml"
+cat >"$BUILD_DIR/$MAGICK_DIRpolicy.xml" <<EOF
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE policymap [
   <!ELEMENT policymap (policy)*>
